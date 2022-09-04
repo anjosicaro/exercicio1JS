@@ -1,0 +1,26 @@
+. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let soma = 0;
+    for( i = 0; i < 6; i++){
+        numero = parseInt(prompt("Digite o valor " + i));
+        if(numero < 72){
+            soma += numero; 
+            document.write("<hr>" + "valor " + (i + 1) + " adicionado: " + numero + ";   ");
+        }
+    }
+    document.write("<hr>" + "A soma dos valores maiores que 72 acima é: " + soma)
+
+    </script>
+</body>
+</html>
